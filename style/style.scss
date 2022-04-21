@@ -13,26 +13,107 @@ a {
     text-decoration: none;
 }
 
-//Header
+li {
+    list-style-type: none;
+}
 
-.header {
+//Nav
+.nav__main {
     height: 75px;
     background: #222222;
 
-    &__menu {
+    &__box {
+        height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 18px;
-    }
 
-    &__left a {
-        margin-right: 41px;
-    }
+        &__left {
+            display: flex;
 
-    &__right a {
-        margin-right: 33px;
+            &>li {
+                display: flex;
+                align-items: flex-end;
+                padding: 20px 20px;
+            }
+        }
+
+        &__right {
+            display: flex;
+
+            &>li {
+                padding: 20px 20px;
+                display: flex;
+                align-items: flex-end;
+            }
+        }
     }
+}
+
+.nav__menu {
+    position: relative;
+}
+
+.nav__menu:hover .mega-box {
+    display: block;
+}
+
+//burger-menu
+
+.mega-box {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #6F6E6E;
+    position: absolute;
+    top: 65px;
+    left: -40px;
+    padding: 20px;
+    display: none;
+}
+
+.mega-box::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: -6px;
+    left: 69px;
+    transform: rotate(45deg);
+    border-left: 1px solid #6F6E6E;
+    border-top: 1px solid #6F6E6E;
+
+}
+
+.mega__heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.mini-heading {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    border-bottom: 1px solid #6F6E6E;
+    width: 235px;
+    padding: 10px 0;
+}
+
+.mega-link {
+    display: block;
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6F6E6E;
+}
+
+.mega-link:hover {
+    color:#F16D7F;
 }
 
 //Top
@@ -47,9 +128,9 @@ a {
     justify-content: center;
 
     &__content {
-        display: flex;
         margin-top: 290px;
         margin-left: 45px;
+        display: flex;
     }
 
     &__text {
@@ -169,7 +250,7 @@ a {
     &__box {
         display: flex;
         justify-content: space-between;
-
+        align-items: flex-end;
     }
 
     &__card {
@@ -205,11 +286,11 @@ a {
 
     &__top {
         height: 448px;
-        background-image: url(img/subscribe-bg_1.jpg);
+        background-image: url(../img/subscribe-bg_1.jpg);
         background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
     }
-
 
     &__bottom {
         height: 79px;
@@ -298,17 +379,9 @@ a {
         color: #FFFFFF;
     }
 
-    &__input button:active {
-        width: 100px;
-        height: 49px;
-        background: #FFFFFF;
-        border: none;
-        border-radius: 0 50px 50px 0px;
-        margin-left: 0;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        text-align: center;
+    &__input button:hover {
+        border: 1px solid #F16D7F;
+        background-color: #FFFFFF;
         color: #F16D7F;
     }
 
