@@ -113,7 +113,7 @@ li {
 }
 
 .mega-link:hover {
-    color:#F16D7F;
+    color: #F16D7F;
 }
 
 //Top
@@ -238,7 +238,143 @@ li {
     }
 }
 
-//Products
+//Item__section
+
+.item__section {
+
+    &_heading {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        color: #222222;
+        text-align: center;
+        margin-top: 96px;
+    }
+
+    &_desc {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    &_button {
+        display: flex;
+        justify-content: center;
+        margin-top: 18px;
+        margin-bottom: 95px;
+    }
+
+    &_button_text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 14px 38px;
+        border: 1px solid #FF6A6A;
+        background: #FFFFFF;
+        color: #F16D7F;
+    }
+
+    &_button_text:hover {
+        background: #F16D7F;
+        color: #FFFFFF;
+    }
+}
+
+.item {
+    width: 360px;
+    position: relative;
+    margin-bottom: 30px;
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &:hover {
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    }
+
+    &:hover &__pic {
+        filter: brightness(30%);
+    }
+
+    &:hover &__add_box {
+        display: flex;
+    }
+
+    &__flex {
+        margin-top: 47px;
+    }
+
+    &__link {
+        display: block;
+    }
+
+    &__pic {
+        width: 100%;
+    }
+
+    &__heading {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    &__desc {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5D5D5D;
+        margin-top: 12px;
+        margin-bottom: 17px;
+    }
+
+    &__price {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F16D7F;
+    }
+
+    &__txt_box {
+        padding: 20px;
+    }
+
+    &__add_box {
+        display: none;
+        position: absolute;
+        top: 188px;
+        justify-content: center;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    &__add {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        border: 1px solid #fff;
+        pointer-events: all;
+    }
+
+    &__add:hover {
+        box-shadow: 0 0 10px #fff;
+    }
+
+    &__add_txt {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        margin-left: 8px;
+    }
+}
+
 
 //Feature
 
@@ -414,5 +550,9 @@ li {
     &__button {
         padding: 8px 11px;
         background: #FFFFFF;
+    }
+
+    &__button:hover {
+        background: #F16D7F;
     }
 }
