@@ -541,15 +541,15 @@ li {
 .social {
 
     display: flex;
-    margin-left: 655px;
 
     &__link {
-        margin-right: 7px;
+        margin-right: 8px;
     }
 
     &__button {
         padding: 8px 11px;
         background: #FFFFFF;
+        color: #000000;
     }
 
     &__button:hover {

@@ -599,16 +599,16 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 655px;
 }
 
 .social__link {
-  margin-right: 7px;
+  margin-right: 8px;
 }
 
 .social__button {
   padding: 8px 11px;
   background: #FFFFFF;
+  color: #000000;
 }
 
 .social__button:hover {
