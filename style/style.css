@@ -609,9 +609,14 @@ li {
   padding: 8px 11px;
   background: #FFFFFF;
   color: #000000;
+  text-align: center;
 }
 
 .social__button:hover {
   background: #F16D7F;
+}
+
+.social__f {
+  padding: 0 2px;
 }
 /*# sourceMappingURL=style.css.map */

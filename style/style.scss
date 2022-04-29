@@ -550,9 +550,14 @@ li {
         padding: 8px 11px;
         background: #FFFFFF;
         color: #000000;
+        text-align: center;
     }
 
     &__button:hover {
         background: #F16D7F;
     }
+}
+
+.fa-facebook-f {
+    padding: 0 2px;
 }
