@@ -896,7 +896,7 @@ select {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  padding: 14px 38px;
+  padding: 14px 56px 14px 23px;
   border: 1px solid #FF6A6A;
   background: #FFFFFF;
   color: #F16D7F;
@@ -909,6 +909,11 @@ select {
 
 .product_sample {
   margin-bottom: 100px;
+}
+
+.fa-cart-shopping {
+  margin-right: 22px;
+  margin-left: 0;
 }
 
 .registration {
