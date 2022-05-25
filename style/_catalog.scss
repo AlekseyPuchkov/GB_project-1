@@ -1,0 +1,96 @@
+.filter {
+    margin-top: 51px;
+    display: flex;
+
+    &__menu {
+        display: flex;
+    }
+
+    &-txt {
+        margin: 0 11px;
+    }
+
+    .catalog__filter_box {
+        margin-left: 304px;
+    }
+
+    .fa {
+        font-size: 15px;
+    }
+
+    &__menu {
+
+        //burger-menu
+        .filter-box {
+            border-radius: 5px;
+            background-color: $white_color;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+            position: absolute;
+            top: 20px;
+            padding: 20px;
+            display: none;
+            z-index: 1;
+        }
+
+        .filter-heading {
+            border-bottom: 1px solid #EBEBEB;
+            width: 235px;
+            padding: 11px;
+        }
+
+        .filter-heading a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: $grey_color;
+            text-transform: uppercase;
+        }
+
+        .filter-heading a:hover {
+            color: $pink_color;
+        }
+
+        .filter-link_box {
+            padding-top: 20px;
+            margin-bottom: 24px;
+        }
+
+        .filter-link {
+            display: block;
+            line-height: 28px;
+            font-weight: 400;
+            font-size: 14px;
+            color: $grey_color;
+        }
+
+        .filter-link:hover {
+            color: $pink_color;
+        }
+
+    }
+}
+
+.filter-heading_box {
+    display: flex;
+
+}
+
+.filter-heading_box-brand {
+    margin-bottom: 18px;
+}
+
+.filter__menu {
+    position: relative;
+}
+
+.filter__menu:hover {
+    color: $pink_color;
+}
+
+.filter__menu:hover .filter-box {
+    display: block;
+}
+
+.catalog__items {
+    margin-top: 0px;
+}
