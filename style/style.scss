@@ -5,6 +5,8 @@
 }
 
 @import "_vars";
+//style-karysel
+@import "_style-karysel";
 
 .container {
     width: 1140px;
@@ -183,8 +185,8 @@ li {
     }
 
     &_button_text:hover {
-        background: $pink_color;
-        color: $white_color;
+        background: $white_color;
+        color: $pink_color;
     }
 }
 
@@ -319,6 +321,16 @@ li {
         width: 360px;
         margin-top: 16px;
     }
+
+    .blink_me {
+        animation: blinker 3s linear infinite;
+    }
+
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
 }
 
 //pagination
@@ -370,3 +382,6 @@ ul.pagination li a:hover:not(.active) {
 
 //Catalog Page
 @import "_catalog";
+
+//Shopping Cart
+@import "_shop-cart";

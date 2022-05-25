@@ -32,22 +32,22 @@
             z-index: 1;
         }
 
-        .filter__heading {
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 17px;
-            color: #000000;
-        }
-
         .filter-heading {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 17px;
-            color: #EF5B70;
-            text-transform: uppercase;
             border-bottom: 1px solid #EBEBEB;
             width: 235px;
             padding: 11px;
+        }
+
+        .filter-heading a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: $grey_color;
+            text-transform: uppercase;
+        }
+
+        .filter-heading a:hover {
+            color: $pink_color;
         }
 
         .filter-link_box {
@@ -66,6 +66,7 @@
         .filter-link:hover {
             color: $pink_color;
         }
+
     }
 }
 

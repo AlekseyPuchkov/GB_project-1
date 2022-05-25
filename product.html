@@ -53,7 +53,7 @@
                         </div>
                     </li>
                     <li><a href="reg.html"><img src="img/Forma_user.svg" alt="registration"></a></li>
-                    <li><a href="#"><img src="img/shopping_cart.svg" alt="cart"></a></li>
+                    <li><a href="shop-cart.html"><img src="img/shopping_cart.svg" alt="cart"></a></li>
                 </ul>
             </div>
         </nav>
@@ -71,17 +71,46 @@
                 </nav>
             </section>
         </section>
+
+
         <section class="models">
-            <a href="">
-                <div class="grey_left"></div>
-            </a>
-            <section class="models__photo container">
-                <img src="img/models_photo.png" alt="model">
-            </section>
-            <a href="">
-                <div class="grey_right"></div>
-            </a>
+            <div class="all container">
+                <input checked type="radio" name="respond" id="desktop">
+                <article id="slider">
+                    <input checked type="radio" name="slider" id="switch1">
+                    <input type="radio" name="slider" id="switch2">
+                    <input type="radio" name="slider" id="switch3">
+                    <input type="radio" name="slider" id="switch4">
+                    <input type="radio" name="slider" id="switch5">
+                    <div id="slides">
+                        <div id="overflow">
+                            <div class="image">
+                                <article><img class="photo-slider" src="img/models_photo.png"></article>
+                                <article><img src="img/models_photo.png"></article>
+                                <article><img src="img/models_photo.png"></article>
+                                <article><img src="img/models_photo.png"></article>
+                                <article><img src="img/models_photo.png"></article>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="controls">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                        <label for="switch4"></label>
+                        <label for="switch5"></label>
+                    </div>
+                    <div id="active">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                        <label for="switch4"></label>
+                        <label for="switch5"></label>
+                    </div>
+                </article>
+            </div>
         </section>
+
         <section class="product__offer container">
             <section class="product__offer__content">
                 <h4 class="product__offer__h4">WOMEN COLLECTION</h4>
@@ -202,7 +231,7 @@
                     </div>
                     <form class="subscribe__input">
                         <input type="email" placeholder="Enter Your Email">
-                        <button>Subscribe</button>
+                        <button class="third">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -213,7 +242,7 @@
                     <p class="copyright_text">&copy; 2022 Brand All Rights Reserved.
                     </p>
                 </div>
-                <div class="social">
+                <nav class="social">
                     <div class="social__link">
                         <a class="social__button" href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
@@ -226,7 +255,7 @@
                     <div class="social__link">
                         <a class="social__button" href="#"><i class="fa-brands fa-twitter"></i></a>
                     </div>
-                </div>
+                </nav>
             </div>
         </section>
     </footer>

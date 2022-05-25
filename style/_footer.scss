@@ -71,6 +71,7 @@
         background: #E1E1E1;
         border: none;
         padding-left: 20px;
+        padding-right: 10px;
         border-radius: 50px 0 0 50px;
         display: block;
         outline: none;
@@ -101,6 +102,18 @@
         color: $pink_color;
     }
 
+}
+
+.third {
+    border-color: $pink_color;
+    color: #fff;
+    box-shadow: 0 0 40px 40px $pink_color inset, 0 0 0 0 $pink_color;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.third:hover {
+    box-shadow: 0 0 10px 0 $pink_color inset, 0 0 10px 4px $pink_color;
 }
 
 .footer__bottom_content {
@@ -136,6 +149,7 @@
     &__button:hover {
         background: $pink_color;
         color: #000000;
+        border-radius: 10px;
     }
 }
 
