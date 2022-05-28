@@ -94,3 +94,27 @@
 .catalog__items {
     margin-top: 0px;
 }
+
+.accordion input {
+    display: none;
+}
+
+.accordion__content {
+    display: none;
+}
+
+.accordion input:checked~.accordion__content {
+    display: block;
+}
+
+.accordion__header {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.accordion__header:hover {
+    color: $pink_color;
+    font-weight: 500;
+}
