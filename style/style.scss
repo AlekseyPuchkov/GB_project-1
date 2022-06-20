@@ -9,7 +9,7 @@
 @import "_style-karysel";
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -28,6 +28,7 @@ li {
 .top {
     height: 764px;
     background: #F1E4E6;
+    width: 100%;
 }
 
 .banner {
@@ -385,3 +386,6 @@ ul.pagination li a:hover:not(.active) {
 
 //Shopping Cart
 @import "_shop-cart";
+
+//Media 
+@import "_media";
