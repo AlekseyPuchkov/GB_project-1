@@ -1,0 +1,40 @@
+//Nav
+.nav__main {
+    height: 75px;
+    background: $dark-grey_color;
+
+    &__box {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__left {
+            display: flex;
+
+            &>li {
+                display: flex;
+                align-items: flex-end;
+                padding: 20px 20px;
+            }
+        }
+
+        &__right {
+            display: flex;
+
+            &>li {
+                padding: 20px 20px;
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+    }
+}
+
+.nav__menu {
+    position: relative;
+}
+
+.nav__menu:hover .mega-box {
+    display: block;
+}
